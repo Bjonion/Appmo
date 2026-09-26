@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:appflutter/modelos/propiedad.dart';
 import 'package:appflutter/screen/detalle_propiedad_pantalla.dart';
+import 'package:appflutter/screen/formulario_propiedad_pantalla.dart';
 
 class CatalogoPantalla extends StatefulWidget {
   const CatalogoPantalla({super.key, required this.rol});
@@ -12,7 +13,7 @@ class CatalogoPantalla extends StatefulWidget {
 }
 
 class _CatalogoPantallaState extends State<CatalogoPantalla> {
-  static const List<Propiedad> _propiedades = [
+  static const List<Propiedad> _propiedadesIniciales = [
     Propiedad(
       titulo: 'Apartamento moderno en Laureles',
       ciudad: 'Medellín',
@@ -43,21 +44,55 @@ class _CatalogoPantallaState extends State<CatalogoPantalla> {
     ),
   ];
 
+  late final List<Propiedad> _propiedades;
+  late List<Propiedad> _resultados;
   String _ciudadSeleccionada = 'Todas';
   String _tipoSeleccionado = 'Todos';
-  List<Propiedad> _resultados = _propiedades;
+
+  @override
+  void initState() {
+    super.initState();
+    _propiedades = List<Propiedad>.of(_propiedadesIniciales);
+    _resultados = List<Propiedad>.of(_propiedades);
+  }
+
+  List<Propiedad> _filtrarPropiedades() {
+    return _propiedades.where((propiedad) {
+      final coincideCiudad =
+          _ciudadSeleccionada == 'Todas' ||
+          propiedad.ciudad == _ciudadSeleccionada;
+      final coincideTipo =
+          _tipoSeleccionado == 'Todos' || propiedad.tipo == _tipoSeleccionado;
+      return coincideCiudad && coincideTipo;
+    }).toList();
+  }
 
   void _aplicarFiltros() {
     setState(() {
-      _resultados = _propiedades.where((propiedad) {
-        final coincideCiudad =
-            _ciudadSeleccionada == 'Todas' ||
-            propiedad.ciudad == _ciudadSeleccionada;
-        final coincideTipo =
-            _tipoSeleccionado == 'Todos' || propiedad.tipo == _tipoSeleccionado;
-        return coincideCiudad && coincideTipo;
-      }).toList();
+      _resultados = _filtrarPropiedades();
     });
+  }
+
+  Future<void> _abrirFormularioPropiedad() async {
+    final nuevaPropiedad = await Navigator.push<Propiedad>(
+      context,
+      MaterialPageRoute<Propiedad>(
+        builder: (context) => FormularioPropiedadPantalla(rol: widget.rol),
+      ),
+    );
+
+    if (!mounted || nuevaPropiedad == null) {
+      return;
+    }
+
+    setState(() {
+      _propiedades.insert(0, nuevaPropiedad);
+      _resultados = _filtrarPropiedades();
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Propiedad guardada correctamente.')),
+    );
   }
 
   void _mostrarPendiente(String pantalla) {
@@ -216,7 +251,7 @@ class _CatalogoPantallaState extends State<CatalogoPantalla> {
       runSpacing: 12,
       children: [
         OutlinedButton.icon(
-          onPressed: () => _mostrarPendiente('P-04 Formulario de propiedad'),
+          onPressed: _abrirFormularioPropiedad,
           icon: const Icon(Icons.add_home_outlined),
           label: const Text('Publicar propiedad'),
         ),
