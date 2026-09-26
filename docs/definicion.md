@@ -4,7 +4,7 @@
 |---|---|
 | Integrantes | Andrés y Julián |
 | Curso y grupo | Programación Móvil (IF2004), grupo 601 |
-| Versión | 1.7, 26 de septiembre de 2026 |
+| Versión | 1.8, 26 de septiembre de 2026 |
 | Estado | Definición aprobada para el primer entregable |
 
 ## Tabla de contenido
@@ -314,7 +314,7 @@ requerimientos, la navegación y el código.
 | P-02 | `mockup/p02-catalogo.png` | Filtros de ciudad y tipo, tarjetas de propiedades y accesos según el rol. | Aprobado |
 | P-03 | `mockup/p03-detalle-propiedad.png` | Imagen, precio, ubicación, descripción y características. | Aprobado |
 | P-04 | `mockup/p04-formulario-propiedad.png` | Campos de la ficha, referencia de imagen y botón Guardar. | Aprobado |
-| P-05 | `mockup/p05-oportunidades.png` | Lista con propiedad, participantes, estado y botón Nueva oportunidad. | Pendiente |
+| P-05 | `mockup/p05-oportunidades.png` | Lista con propiedad, participantes, estado y botón Nueva oportunidad. | Aprobado |
 | P-06 | `mockup/p06-registro-oportunidad.png` | Propiedad, puntas, comisión, porcentajes, cálculo y resumen. | Pendiente |
 
 Cada imagen aprobada se mostrará a continuación mediante una ruta relativa.
@@ -351,6 +351,15 @@ El formulario reúne los datos obligatorios de la ficha inmobiliaria, la
 referencia de al menos una imagen y la acción Guardar propiedad. Su diseño
 permite señalar los campos incompletos antes de aceptar el registro y ofrece una
 acción para cancelar y regresar al catálogo.
+
+### 12.5 P-05 Lista de oportunidades
+
+![P-05 Lista de oportunidades](mockup/p05-oportunidades.png)
+
+La lista resume las oportunidades registradas y muestra para cada una la
+propiedad asociada, las puntas captadora y colocadora, el estado y la comisión.
+El agente puede seleccionar una tarjeta para revisar su cálculo en P-06 o usar
+la acción Nueva oportunidad para iniciar un registro.
 
 ## 13. Historias de usuario, casos de uso, restricciones y supuestos
 
@@ -505,6 +514,7 @@ integrantes. Ningún integrante debe fusionar su propio Pull Request.
 | 1.5 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-03 Detalle de propiedad. | Andrés |
 | 1.6 | 26 de septiembre de 2026 | Se aclaró que `docs/alcance.md` representa la visión futura y que este documento define el MVP vigente. | Andrés |
 | 1.7 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-04 Formulario de propiedad. | Julián |
+| 1.8 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-05 Lista de oportunidades. | Julián |
 
 ## Referencias
 
