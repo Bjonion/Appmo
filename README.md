@@ -123,6 +123,10 @@ por cada pantalla y nombres relacionados con los identificadores P-01 a P-06.
 
 ![Mockup de acceso y selección de rol](docs/mockup/p01-acceso.png)
 
+### P-02 Catálogo con filtros integrados
+
+![Mockup del catálogo con filtros integrados](docs/mockup/p02-catalogo.png)
+
 Las capturas restantes se agregarán a medida que se aprueben los mockups y las
 pantallas del esqueleto navegable.
 
