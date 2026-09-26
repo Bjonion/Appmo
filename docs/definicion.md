@@ -4,7 +4,7 @@
 |---|---|
 | Integrantes | Andrés y Julián |
 | Curso y grupo | Programación Móvil (IF2004), grupo 601 |
-| Versión | 1.2, 25 de septiembre de 2026 |
+| Versión | 1.3, 26 de septiembre de 2026 |
 | Estado | Definición aprobada para el primer entregable |
 
 ## Tabla de contenido
@@ -310,19 +310,22 @@ requerimientos, la navegación y el código.
 
 | ID | Archivo | Contenido visual previsto | Estado |
 |---|---|---|---|
-| P-01 | `mockup/p01-acceso.png` | Logotipo, correo, contraseña, selector de rol y botón Ingresar. | Pendiente |
+| P-01 | `mockup/p01-acceso.png` | Logotipo, correo, contraseña, selector de rol y botón Ingresar. | Aprobado |
 | P-02 | `mockup/p02-catalogo.png` | Filtros de ciudad y tipo, tarjetas de propiedades y accesos según el rol. | Pendiente |
 | P-03 | `mockup/p03-detalle-propiedad.png` | Imagen, precio, ubicación, descripción y características. | Pendiente |
 | P-04 | `mockup/p04-formulario-propiedad.png` | Campos de la ficha, referencia de imagen y botón Guardar. | Pendiente |
 | P-05 | `mockup/p05-oportunidades.png` | Lista con propiedad, participantes, estado y botón Nueva oportunidad. | Pendiente |
 | P-06 | `mockup/p06-registro-oportunidad.png` | Propiedad, puntas, comisión, porcentajes, cálculo y resumen. | Pendiente |
 
-Cuando las imágenes sean aprobadas, esta sección las mostrará mediante rutas
-relativas, por ejemplo:
+Cada imagen aprobada se mostrará a continuación mediante una ruta relativa.
 
-```markdown
+### 12.1 P-01 Acceso y selección de rol
+
 ![P-01 Acceso y selección de rol](mockup/p01-acceso.png)
-```
+
+El acceso presenta la identidad de InmoConecta, los campos de correo y
+contraseña, un selector de rol y el botón Ingresar. Una nota informa que el rol
+se utiliza en modo demostrativo para habilitar los recorridos del MVP.
 
 ## 13. Historias de usuario, casos de uso, restricciones y supuestos
 
@@ -472,6 +475,7 @@ integrantes. Ningún integrante debe fusionar su propio Pull Request.
 | 1.0 | 25 de septiembre de 2026 | Definición inicial de InmoConecta, doce pantallas y reparto de seis pantallas por integrante. | Andrés y Julián |
 | 1.1 | 25 de septiembre de 2026 | Se fijó `lib/screen/` como ubicación única de las pantallas y se documentó el desarrollo secuencial por ramas. | Andrés y Julián |
 | 1.2 | 25 de septiembre de 2026 | Se redujo el MVP a seis pantallas, tres por integrante, y se aplazaron funciones de la visión completa. | Andrés y Julián |
+| 1.3 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-01 Acceso y selección de rol. | Andrés |
 
 ## Referencias
 

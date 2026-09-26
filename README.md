@@ -119,8 +119,12 @@ por cada pantalla y nombres relacionados con los identificadores P-01 a P-06.
 
 ## Capturas
 
-Las capturas de las pantallas se agregarán cuando estén terminados los mockups
-y el esqueleto navegable.
+### P-01 Acceso y selección de rol
+
+![Mockup de acceso y selección de rol](docs/mockup/p01-acceso.png)
+
+Las capturas restantes se agregarán a medida que se aprueben los mockups y las
+pantallas del esqueleto navegable.
 
 ## Cambios respecto al diseño
 
