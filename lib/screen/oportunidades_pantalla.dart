@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:appflutter/modelos/oportunidad.dart';
 import 'package:appflutter/modelos/propiedad.dart';
+import 'package:appflutter/screen/registro_oportunidad_pantalla.dart';
 
 class OportunidadesPantalla extends StatefulWidget {
   const OportunidadesPantalla({
@@ -48,13 +49,32 @@ class _OportunidadesPantallaState extends State<OportunidadesPantalla> {
     ];
   }
 
-  void _mostrarP06Pendiente([Oportunidad? oportunidad]) {
-    final mensaje = oportunidad == null
-        ? 'El registro P-06 se implementará en el siguiente paso.'
-        : 'El cálculo de ${oportunidad.propiedad.titulo} se abrirá en P-06.';
+  Future<void> _abrirRegistro([Oportunidad? oportunidad]) async {
+    final resultado = await Navigator.push<Oportunidad>(
+      context,
+      MaterialPageRoute<Oportunidad>(
+        builder: (context) => RegistroOportunidadPantalla(
+          propiedades: widget.propiedades,
+          oportunidad: oportunidad,
+        ),
+      ),
+    );
+
+    if (!mounted || resultado == null) {
+      return;
+    }
+
+    setState(() {
+      if (oportunidad == null) {
+        _oportunidades.insert(0, resultado);
+      } else {
+        final indice = _oportunidades.indexOf(oportunidad);
+        _oportunidades[indice] = resultado;
+      }
+    });
 
     ScaffoldMessenger.of(context)
-        .showSnackBar(SnackBar(content: Text(mensaje)));
+        .showSnackBar(const SnackBar(content: Text('Oportunidad guardada.')));
   }
 
   @override
@@ -124,7 +144,7 @@ class _OportunidadesPantallaState extends State<OportunidadesPantalla> {
           SizedBox(
             height: 50,
             child: FilledButton.icon(
-              onPressed: _mostrarP06Pendiente,
+              onPressed: _abrirRegistro,
               icon: const Icon(Icons.add_circle_outline),
               label: const Text('Nueva oportunidad'),
             ),
@@ -135,7 +155,7 @@ class _OportunidadesPantallaState extends State<OportunidadesPantalla> {
               padding: const EdgeInsets.only(bottom: 14),
               child: _TarjetaOportunidad(
                 oportunidad: oportunidad,
-                onTap: () => _mostrarP06Pendiente(oportunidad),
+                onTap: () => _abrirRegistro(oportunidad),
               ),
             ),
           ),
