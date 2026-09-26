@@ -131,6 +131,10 @@ por cada pantalla y nombres relacionados con los identificadores P-01 a P-06.
 
 ![Mockup del detalle de propiedad](docs/mockup/p03-detalle-propiedad.png)
 
+### P-04 Formulario de propiedad
+
+![Mockup del formulario de propiedad](docs/mockup/p04-formulario-propiedad.png)
+
 Las capturas restantes se agregarán a medida que se aprueben los mockups y las
 pantallas del esqueleto navegable.
 
