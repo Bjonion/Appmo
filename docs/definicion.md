@@ -4,7 +4,7 @@
 |---|---|
 | Integrantes | Andrés y Julián |
 | Curso y grupo | Programación Móvil (IF2004), grupo 601 |
-| Versión | 1.5, 26 de septiembre de 2026 |
+| Versión | 1.6, 26 de septiembre de 2026 |
 | Estado | Definición aprobada para el primer entregable |
 
 ## Tabla de contenido
@@ -494,6 +494,7 @@ integrantes. Ningún integrante debe fusionar su propio Pull Request.
 | 1.3 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-01 Acceso y selección de rol. | Andrés |
 | 1.4 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-02 Catálogo con filtros integrados. | Andrés |
 | 1.5 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-03 Detalle de propiedad. | Andrés |
+| 1.6 | 26 de septiembre de 2026 | Se aclaró que `docs/alcance.md` representa la visión futura y que este documento define el MVP vigente. | Andrés |
 
 ## Referencias
 

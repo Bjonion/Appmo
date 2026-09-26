@@ -1,4 +1,10 @@
-# Alcance del proyecto: InmoConecta
+# Visión general del producto: InmoConecta
+
+Este documento conserva la visión funcional amplia considerada al iniciar el
+proyecto. El alcance vigente y evaluable del primer entregable está definido en
+[`definicion.md`](definicion.md) y corresponde a un MVP de seis pantallas. Las
+funciones adicionales descritas aquí son posibles ampliaciones para etapas
+posteriores y no forman parte del esqueleto navegable actual.
 
 ## Problema que resuelve
 
@@ -8,7 +14,7 @@ La comercialización de propiedades suele estar fragmentada entre publicaciones 
 
 La aplicación está dirigida principalmente a agentes inmobiliarios independientes y pequeñas agencias que comercializan propiedades residenciales en Colombia. También podrán usarla propietarios que desean publicar directamente un inmueble y personas interesadas en comprar, quienes consultarán la oferta y solicitarán contacto con el responsable de cada publicación.
 
-## Funcionalidades mínimas (MVP)
+## Funcionalidades previstas para etapas posteriores
 
 - Registrar e iniciar sesión con correo electrónico y seleccionar un rol: agente inmobiliario, propietario o comprador.
 - Crear, editar, publicar y desactivar propiedades con precio, tipo de inmueble, ubicación, descripción, características e imágenes.
@@ -25,13 +31,22 @@ La aplicación está dirigida principalmente a agentes inmobiliarios independien
 - Incorporar avalúos automáticos, recorridos virtuales, firma electrónica, chat en tiempo real o recomendaciones mediante inteligencia artificial.
 - Desarrollar versiones web o de escritorio, un panel administrativo avanzado o integraciones con bancos, notarías, catastros, portales externos y sistemas CRM.
 
-## Stack
+## Stack del primer entregable
 
 - **Aplicación móvil:** Flutter y Dart.
 - **Control de versiones:** Git y repositorio público en GitHub.
+- **Navegación:** `Navigator.push`, `MaterialPageRoute` y `Navigator.pop`.
+- **Datos:** objetos y listas demostrativas en memoria.
+- **Organización:** una pantalla por archivo dentro de `lib/screen/`.
+
+## Tecnologías previstas para etapas posteriores
+
 - **Autenticación:** Firebase Authentication con correo electrónico y contraseña.
 - **Datos:** Cloud Firestore para usuarios, propiedades, favoritos, solicitudes de contacto y oportunidades de venta.
 - **Archivos:** Firebase Storage para las imágenes de las propiedades.
-- **Arquitectura:** Clean Architecture por capas, Riverpod para el manejo de estado y `go_router` para la navegación.
 - **Seguridad:** reglas de acceso de Firebase basadas en autenticación, rol y propiedad de los registros.
 
+La incorporación de paquetes, patrones o arquitecturas adicionales deberá
+documentarse y aprobarse antes de implementarse. El primer entregable no usa
+Riverpod, `go_router` ni Clean Architecture porque se limita a las técnicas
+trabajadas en clase.
