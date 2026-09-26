@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:appflutter/modelos/propiedad.dart';
 import 'package:appflutter/screen/detalle_propiedad_pantalla.dart';
 import 'package:appflutter/screen/formulario_propiedad_pantalla.dart';
+import 'package:appflutter/screen/oportunidades_pantalla.dart';
 
 class CatalogoPantalla extends StatefulWidget {
   const CatalogoPantalla({super.key, required this.rol});
@@ -95,9 +96,15 @@ class _CatalogoPantallaState extends State<CatalogoPantalla> {
     );
   }
 
-  void _mostrarPendiente(String pantalla) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('$pantalla se integrará en la rama de Julián.')),
+  void _abrirOportunidades() {
+    Navigator.push(
+      context,
+      MaterialPageRoute<void>(
+        builder: (context) => OportunidadesPantalla(
+          rol: widget.rol,
+          propiedades: List<Propiedad>.unmodifiable(_propiedades),
+        ),
+      ),
     );
   }
 
@@ -257,7 +264,7 @@ class _CatalogoPantallaState extends State<CatalogoPantalla> {
         ),
         if (widget.rol == 'Agente')
           OutlinedButton.icon(
-            onPressed: () => _mostrarPendiente('P-05 Oportunidades'),
+            onPressed: _abrirOportunidades,
             icon: const Icon(Icons.bar_chart_outlined),
             label: const Text('Oportunidades'),
           ),
