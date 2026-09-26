@@ -127,6 +127,10 @@ por cada pantalla y nombres relacionados con los identificadores P-01 a P-06.
 
 ![Mockup del catálogo con filtros integrados](docs/mockup/p02-catalogo.png)
 
+### P-03 Detalle de propiedad
+
+![Mockup del detalle de propiedad](docs/mockup/p03-detalle-propiedad.png)
+
 Las capturas restantes se agregarán a medida que se aprueben los mockups y las
 pantallas del esqueleto navegable.
 

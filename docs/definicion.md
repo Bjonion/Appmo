@@ -4,7 +4,7 @@
 |---|---|
 | Integrantes | Andrés y Julián |
 | Curso y grupo | Programación Móvil (IF2004), grupo 601 |
-| Versión | 1.4, 26 de septiembre de 2026 |
+| Versión | 1.5, 26 de septiembre de 2026 |
 | Estado | Definición aprobada para el primer entregable |
 
 ## Tabla de contenido
@@ -312,7 +312,7 @@ requerimientos, la navegación y el código.
 |---|---|---|---|
 | P-01 | `mockup/p01-acceso.png` | Logotipo, correo, contraseña, selector de rol y botón Ingresar. | Aprobado |
 | P-02 | `mockup/p02-catalogo.png` | Filtros de ciudad y tipo, tarjetas de propiedades y accesos según el rol. | Aprobado |
-| P-03 | `mockup/p03-detalle-propiedad.png` | Imagen, precio, ubicación, descripción y características. | Pendiente |
+| P-03 | `mockup/p03-detalle-propiedad.png` | Imagen, precio, ubicación, descripción y características. | Aprobado |
 | P-04 | `mockup/p04-formulario-propiedad.png` | Campos de la ficha, referencia de imagen y botón Guardar. | Pendiente |
 | P-05 | `mockup/p05-oportunidades.png` | Lista con propiedad, participantes, estado y botón Nueva oportunidad. | Pendiente |
 | P-06 | `mockup/p06-registro-oportunidad.png` | Propiedad, puntas, comisión, porcentajes, cálculo y resumen. | Pendiente |
@@ -334,6 +334,14 @@ se utiliza en modo demostrativo para habilitar los recorridos del MVP.
 El catálogo integra los filtros de ciudad y tipo de inmueble sobre una lista de
 tarjetas seleccionables. Cuando el rol es agente, también muestra los accesos a
 Publicar propiedad y Oportunidades.
+
+### 12.3 P-03 Detalle de propiedad
+
+![P-03 Detalle de propiedad](mockup/p03-detalle-propiedad.png)
+
+El detalle conserva el nombre, la ubicación, el precio y las características de
+la propiedad seleccionada en P-02. También muestra una imagen principal, una
+descripción, el responsable y una acción clara para regresar al catálogo.
 
 ## 13. Historias de usuario, casos de uso, restricciones y supuestos
 
@@ -485,6 +493,7 @@ integrantes. Ningún integrante debe fusionar su propio Pull Request.
 | 1.2 | 25 de septiembre de 2026 | Se redujo el MVP a seis pantallas, tres por integrante, y se aplazaron funciones de la visión completa. | Andrés y Julián |
 | 1.3 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-01 Acceso y selección de rol. | Andrés |
 | 1.4 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-02 Catálogo con filtros integrados. | Andrés |
+| 1.5 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-03 Detalle de propiedad. | Andrés |
 
 ## Referencias
 
