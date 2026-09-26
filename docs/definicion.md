@@ -4,7 +4,7 @@
 |---|---|
 | Integrantes | Andrés y Julián |
 | Curso y grupo | Programación Móvil (IF2004), grupo 601 |
-| Versión | 1.6, 26 de septiembre de 2026 |
+| Versión | 1.9, 26 de septiembre de 2026 |
 | Estado | Definición aprobada para el primer entregable |
 
 ## Tabla de contenido
@@ -313,9 +313,9 @@ requerimientos, la navegación y el código.
 | P-01 | `mockup/p01-acceso.png` | Logotipo, correo, contraseña, selector de rol y botón Ingresar. | Aprobado |
 | P-02 | `mockup/p02-catalogo.png` | Filtros de ciudad y tipo, tarjetas de propiedades y accesos según el rol. | Aprobado |
 | P-03 | `mockup/p03-detalle-propiedad.png` | Imagen, precio, ubicación, descripción y características. | Aprobado |
-| P-04 | `mockup/p04-formulario-propiedad.png` | Campos de la ficha, referencia de imagen y botón Guardar. | Pendiente |
-| P-05 | `mockup/p05-oportunidades.png` | Lista con propiedad, participantes, estado y botón Nueva oportunidad. | Pendiente |
-| P-06 | `mockup/p06-registro-oportunidad.png` | Propiedad, puntas, comisión, porcentajes, cálculo y resumen. | Pendiente |
+| P-04 | `mockup/p04-formulario-propiedad.png` | Campos de la ficha, referencia de imagen y botón Guardar. | Aprobado |
+| P-05 | `mockup/p05-oportunidades.png` | Lista con propiedad, participantes, estado y botón Nueva oportunidad. | Aprobado |
+| P-06 | `mockup/p06-registro-oportunidad.png` | Propiedad, puntas, comisión, porcentajes, cálculo y resumen. | Aprobado |
 
 Cada imagen aprobada se mostrará a continuación mediante una ruta relativa.
 
@@ -342,6 +342,33 @@ Publicar propiedad y Oportunidades.
 El detalle conserva el nombre, la ubicación, el precio y las características de
 la propiedad seleccionada en P-02. También muestra una imagen principal, una
 descripción, el responsable y una acción clara para regresar al catálogo.
+
+### 12.4 P-04 Formulario de propiedad
+
+![P-04 Formulario de propiedad](mockup/p04-formulario-propiedad.png)
+
+El formulario reúne los datos obligatorios de la ficha inmobiliaria, la
+referencia de al menos una imagen y la acción Guardar propiedad. Su diseño
+permite señalar los campos incompletos antes de aceptar el registro y ofrece una
+acción para cancelar y regresar al catálogo.
+
+### 12.5 P-05 Lista de oportunidades
+
+![P-05 Lista de oportunidades](mockup/p05-oportunidades.png)
+
+La lista resume las oportunidades registradas y muestra para cada una la
+propiedad asociada, las puntas captadora y colocadora, el estado y la comisión.
+El agente puede seleccionar una tarjeta para revisar su cálculo en P-06 o usar
+la acción Nueva oportunidad para iniciar un registro.
+
+### 12.6 P-06 Registro y cálculo de oportunidad
+
+![P-06 Registro y cálculo de oportunidad](mockup/p06-registro-oportunidad.png)
+
+El formulario reúne la propiedad, las puntas participantes, el precio de venta,
+la comisión total y los porcentajes de distribución. La misma pantalla valida
+que los porcentajes sumen 100 %, calcula el valor de cada punta y presenta un
+resumen informativo antes de guardar la oportunidad.
 
 ## 13. Historias de usuario, casos de uso, restricciones y supuestos
 
@@ -495,6 +522,9 @@ integrantes. Ningún integrante debe fusionar su propio Pull Request.
 | 1.4 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-02 Catálogo con filtros integrados. | Andrés |
 | 1.5 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-03 Detalle de propiedad. | Andrés |
 | 1.6 | 26 de septiembre de 2026 | Se aclaró que `docs/alcance.md` representa la visión futura y que este documento define el MVP vigente. | Andrés |
+| 1.7 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-04 Formulario de propiedad. | Julián |
+| 1.8 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-05 Lista de oportunidades. | Julián |
+| 1.9 | 26 de septiembre de 2026 | Se aprobó y documentó el mockup de P-06 Registro y cálculo de oportunidad. | Julián |
 
 ## Referencias
 

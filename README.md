@@ -131,8 +131,19 @@ por cada pantalla y nombres relacionados con los identificadores P-01 a P-06.
 
 ![Mockup del detalle de propiedad](docs/mockup/p03-detalle-propiedad.png)
 
-Las capturas restantes se agregarán a medida que se aprueben los mockups y las
-pantallas del esqueleto navegable.
+### P-04 Formulario de propiedad
+
+![Mockup del formulario de propiedad](docs/mockup/p04-formulario-propiedad.png)
+
+### P-05 Lista de oportunidades
+
+![Mockup de la lista de oportunidades](docs/mockup/p05-oportunidades.png)
+
+### P-06 Registro y cálculo de oportunidad
+
+![Mockup del registro y cálculo de oportunidad](docs/mockup/p06-registro-oportunidad.png)
+
+Los seis mockups del primer entregable se encuentran aprobados y documentados.
 
 ## Cambios respecto al diseño
 
